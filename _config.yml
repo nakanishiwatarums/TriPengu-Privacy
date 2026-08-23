@@ -1,0 +1,14 @@
+# GitHub Pages (source: branch = main, folder = /docs).
+#
+# The only reason this site exists is that Google Play requires a publicly
+# reachable privacy policy URL. Everything else in docs/ is internal development
+# notes, so it is excluded rather than published — they would be pages nobody
+# asked for, at URLs that look official.
+theme: jekyll-theme-minimal
+title: TriPengu
+description: 旅のしおりと記録をつくるアプリ
+
+exclude:
+  - ROADMAP.md
+  - SETUP.md
+  - UX_CONCEPT_TODO.md
