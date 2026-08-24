@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f7f6f1;
+    color: #2b2b26;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+    line-height: 1.85;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 56px;
+  }
+  h1 { font-size: 1.5rem; margin-top: 0; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.6em; }
+  a { color: #2f6f5e; }
+  hr { border: none; border-top: 1px solid #ddd8cc; margin: 2em 0; }
+  ul, ol { padding-left: 1.4em; }
+  footer {
+    text-align: center;
+    padding: 20px 24px 40px;
+    color: #8b8878;
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    {{ content }}
+  </div>
+  <footer>&copy; 2026 TriPengu</footer>
+</body>
+</html>
