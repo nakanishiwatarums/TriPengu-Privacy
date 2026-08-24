@@ -4,9 +4,18 @@
 # reachable privacy policy URL. Everything else in docs/ is internal development
 # notes, so it is excluded rather than published — they would be pages nobody
 # asked for, at URLs that look official.
-theme: jekyll-theme-minimal
 title: TriPengu
 description: 旅のしおりと記録をつくるアプリ
+
+# No `theme:` — a pages-theme gem's own default layout comes with its own chrome (a
+# "View on GitHub" ribbon, "This project is maintained by <github user>", "Hosted on GitHub
+# Pages — Theme by orderedlist"), which reads as a developer's repo page, not a service's own
+# privacy policy. _layouts/default.html below is this site's entire look, on purpose.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 exclude:
   - ROADMAP.md
